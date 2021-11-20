@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Ocean</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script>
+    $(document).ready(function () {
+      $("h1").addClass("animate__animated animate__rubberBand");
+      $(".text").addClass("animate__animated animate__fadeIn");
+      $("img").addClass("animate__animated animate__bounce");
+      $(".N").mouseover(function () {
+      $(".N").addClass("animate__animated animate__swing");});
+      $(".P").mouseover(function () {
+      $(".P").addClass("animate__animated animate__swing");});
+      $(".B").mouseover(function () {
+      $(".B").addClass("animate__animated animate__swing");});
+    });
+  </script>
+  <style>
+    body {
+      background-image: url("https://images.pexels.com/photos/3410956/pexels-photo-3410956.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      font-family: 'Papyrus';
+      color: rgb(212, 245, 255);
+    }
+    .text {
+      padding: 0px 35px;
+      margin: 2em;
+      border: 5px solid rgb(212, 245, 255,0.5);
+    }
+    .head {
+      background-color: rgba(134, 162, 207, 0.5);
+      padding: 10px 10px;
+      text-align:center;
+    }
+    a {
+      color: rgb(212, 245, 255); 
+    }
+    img  {
+      max-width: 100%;
+      object-fit: cover;
+      width: 400px;
+      height: 300px;
+      border: 2px solid rgb(212, 245, 255,0.5);
+    } 
+    ::selection {
+    background: #0a406d;
+    }  
+  </style>
+</head>
+<body>
+<div class=text>
+  <h1 class=head>≋ Welcome To The Ocean ≋</h1>
+  <hr style="border:1px dashed rgb(212, 245, 255, 0.5)">
+    <br>
+    <p>　　海水覆蓋了地球約71%－72%的表面積（~3.6×108平方公里），可以分為數個主要的洋及一些較小的海。地球上97%的水都在海洋中，但海洋學者認為人類只探索了海洋中的5%。海洋的的總體積約13億立方公里（3.1億立方英哩），平均深度約3,682公尺（12,080英呎）。>世界大洋的總面積約占海洋面積的89%。大洋的水深一般在3,000米以上，最深處可達1萬多米。大洋離陸地遠，不受陸地的影響，其水文和鹽度的變化不大，每個大洋都有自己獨特的洋流和潮汐系統。大洋的水透明度很大，水中的雜質少。世界上的大洋共有5個，按照面積由大到小分別為太平洋、大西洋、印度洋、南冰洋和北冰洋。海水覆蓋了地球約71%－72%的表面積（~3.6×108平方公里），可以分為數個主要的洋及一些較小的海。地球上97%的水都在海洋中，但海洋學者認為人類只探索了海洋中的5%。海洋的的總體積約13億立方公里（3.1億立方英哩），平均深度約3,682公尺（12,080英呎）。</p>
+    <p>　　海洋是地球水圈的主要成份，也是地球所有已知生命的起源，是碳循環之一，也影響氣候及天氣形態。海洋是23萬已知物種的棲地，而大部份的深海都尚未探索過。估計會有超過200萬種海洋物種。地球上海洋的起源目前尚不清楚，一般認為在冥古宙時就已存在，是生命起源的推動力。</p>
+    <p align="right"><a href="https://zh.wikipedia.org/wiki/%E6%B4%8B" >維基百科</a></p>
+    <br>
+  <h2 class=head>≋ Marine Life ≋</h2>
+  <hr style="border:1px dashed rgb(212, 245, 255, 0.5)">
+  <br>
+  <table cellpadding="5" cellspacing="0" style="width: 100%">
+    <tbody align="center">
+      <tr>
+        <td>
+          <img class="N" 
+            alt="自游生物（Nekton）" 
+            src="https://images.pexels.com/photos/4696771/pexels-photo-4696771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />　
+          <p><a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E6%B8%B8%E7%94%9F%E7%89%A9" title="維基百科">自游生物（Nekton）</a></p>
+        </td>
+        <td>
+          <img class="P" 
+            alt="浮游生物（Plankton）"
+            src="https://images.pexels.com/photos/7575426/pexels-photo-7575426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />　
+          <p><a href="https://zh.wikipedia.org/wiki/%E6%B5%AE%E6%B8%B8%E7%94%9F%E7%89%A9" title="維基百科">浮游生物（Plankton）</a></p>
+        </td>
+        <td>
+          <img class="B" 
+            alt="底棲生物（Benthos)"
+            src="https://images.pexels.com/photos/920165/pexels-photo-920165.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />　
+          <p><a href="https://zh.wikipedia.org/wiki/%E5%BA%95%E6%A3%B2%E7%94%9F%E7%89%A9" title="維基百科">底棲生物（Benthos)</a></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <p align="center">©2021 by 407570397 created with Github</p>
+</div>
+</body>
+</html>
