@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omanyte</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./ndgmr.Collision.js"></script>
+    <script src="Stone.js?1639246293563"></script>
+    <link rel="stylesheet" href="./scss/index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="Omanyte">
+        <div id="app">
+            <h1 class="Score">0</h1>
+            <a class="gamePlayBtn"><img src=".//images/play.png" alt=""></a>
+            <div class="over">
+                <div class="box">
+                    <img src=".//images/over.png" alt="">
+                    <a class="resetPlay"><img src=".//images/play.png" alt=""></a>
+                </div>
+            </div>
+            <div class="hpBar">
+                <h2>HP</h2>
+                <div class="hpBox">
+                    <div class="hp"></div>
+                </div>
+            </div>	
+            <div id="animation_container" style="background-color:rgba(204, 204, 204, 1.00); width:700px; height:400px">
+                <canvas id="canvas" width="700" height="400" style="position: absolute; display: block; background-color:rgba(204, 204, 204, 1.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:700px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
