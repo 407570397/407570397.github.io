@@ -2,7 +2,7 @@ var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAni
 window.onload = function(){
     init();
 }
-
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
@@ -40,7 +40,7 @@ function handleComplete(evt,comp) {
 	let Positions = 1;
 	let isKeydown = false;
 	var Stone = new lib.Oma();
-	Stone.x = 350;
+	Stone.x = 360;
 	Stone.y = 320;
 	exportRoot.addChild(Stone);
 	
@@ -64,7 +64,7 @@ function handleComplete(evt,comp) {
 	
 	document.querySelector(".gamePlayBtn").addEventListener("click",()=>{
 		SAudio = createjs.Sound.play("Start");
-		SAudio.volume = 0.5;
+		SAudio.volume = 0.3;
 		Start = true;
 		document.querySelector(".gamePlayBtn").style.display = "none";
 		window.addEventListener("keydown",keydownMoveFn)
@@ -113,7 +113,7 @@ function handleComplete(evt,comp) {
 			if(Hp > 0){
 				if(hit){
 					EAudio = createjs.Sound.play("Eat")
-					EAudio.volume = 0.5;
+					EAudio.volume = 0.3;
 					createjs.Tween.removeTweens(Food1);
 					exportRoot.removeChild(Food1);
 					Score ++;
@@ -134,7 +134,7 @@ function handleComplete(evt,comp) {
 			if(Hp > 0){
 				if(hit){
 					EAudio = createjs.Sound.play("Eat")
-					EAudio.volume = 0.5;
+					EAudio.volume = 0.3;
 					createjs.Tween.removeTweens(Food2);
 					exportRoot.removeChild(Food2);
 					Score ++;
@@ -153,7 +153,7 @@ function handleComplete(evt,comp) {
 			if(Hp > 0){
 				if(hit){
 					HAudio = createjs.Sound.play("Hit")
-					HAudio.volume = 0.5;
+					HAudio.volume = 0.3;
 					Stone.gotoAndPlay("hit");
 					createjs.Tween.removeTweens(Food3);
 					exportRoot.removeChild(Food3);
@@ -169,7 +169,7 @@ function handleComplete(evt,comp) {
 		if(Hp <= 0){
 			clearInterval(timeFood);
 			OAudio = createjs.Sound.play("Over")
-			OAudio.volume = 0.5;
+			OAudio.volume = 0.3;
 			Stone.gotoAndPlay("die");
 			document.querySelector(".over").style.display = "flex";
 			window.removeEventListener("keydown",keydownMoveFn)
