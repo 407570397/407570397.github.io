@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EatBerry</title>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="./ndgmr.Collision.js"></script>
-    <script src="Stone.js?1639246293563"></script>
+    <script src="./js/ndgmr.Collision.js"></script>
+    <script src="./js/Stone.js?1639246293563"></script>
     <link rel="stylesheet" href="./scss/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        $(document).ready(function () {
+          $(".Omanyte").addClass("animate__animated animate__fadeIn");
+          $("h1").addClass("animate__animated animate__fadeIn");
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1 class="HeaderTitle">Omanyte</h1>
-        <h3 class="HeaderText">Eat Berry</h3>
+        <h1>EatBerry</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Omanyte</a></li>
-            <li><a href="#">SecGame</a></li>
-            <li><a href="#">ThrGame</a></li>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="#">EatBerry</a></li>
+            <li><a href="./Countgame.html">CountGame</a></li>
+            <li><a href="#">FlappyBird</a></li>
         </ul>
     </nav>
     <div class="Omanyte">
@@ -49,7 +56,8 @@
                 </div>
             </div>
         </div>
+        <div class="bg3"></div>
     </div>
-    <div class="bg3"></div>
+    <div class="bg"></div>
 </body>
 </html>

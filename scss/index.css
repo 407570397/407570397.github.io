@@ -91,7 +91,7 @@ a.gamePlayBtn {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
+  margin-top: -215px;
   margin-left: -350px;
 }
 
@@ -103,18 +103,19 @@ h1,
 h3 {
   text-align: center;
   position: relative;
-  top: 140px;
-  color: #3e5c75;
+  top: 100px;
+  color: steelblue;
 }
 
 nav {
   background-color: #1f2227;
   position: absolute;
   width: 980px;
-  top: 50%;
+  top: 55%;
   left: 50%;
   margin-top: 220px;
   margin-left: -490px;
+  z-index: 5;
 }
 
 nav ul {
@@ -135,8 +136,6 @@ nav ul li a {
   padding: 0.5rem 0.75rem;
   color: #cab125;
   text-decoration: none;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 
 nav ul li a:hover {
@@ -145,13 +144,79 @@ nav ul li a:hover {
 
 .bg3 {
   background-image: url(../images/bg3.png);
-  height: 450px;
+  opacity: 0.7;
+  height: 600px;
   width: 980px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -245px;
+  margin-left: -490px;
+  z-index: -1;
+}
+
+.bg {
+  background: #e4e4e4;
+  height: 600px;
+  width: 980px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -490px;
+  z-index: -1;
+}
+
+.bg2 {
+  background: #f3eaea;
+  height: 600px;
+  width: 980px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -490px;
+  z-index: -1;
+}
+
+table {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -230px;
-  margin-left: -490px;
-  z-index: -1;
+  margin-top: -170px;
+  margin-left: -379px;
+}
+
+td {
+  text-align: center;
+  border: 25px solid #e4e4e4;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+h2 {
+  top: 100px;
+  color: #5d7492;
+}
+
+h5 {
+  top: 100px;
+  color: #5d7492;
+  text-shadow: 0px 3px 2px #cccccc;
+  font-size: 1.5em;
+}
+
+td img {
+  border-radius: 20%;
+  -webkit-box-shadow: 0px 5px 10px 0px #cccccc;
+          box-shadow: 0px 5px 10px 0px #cccccc;
+}
+
+td:hover {
+  -webkit-filter: opacity(30%);
+  /* Safari */
+  filter: opacity(100%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=index.css.map */

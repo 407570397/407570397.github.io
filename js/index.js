@@ -34,7 +34,7 @@ function handleComplete(evt,comp) {
 
 	const SPEED = 10;
 	const MISS = 10;
-	let Start =false;
+	let Start = false;
 	let Hp = 100;
 	let Score = 0;
 	let Positions = 1;
@@ -72,9 +72,21 @@ function handleComplete(evt,comp) {
 	})
 
 	document.querySelector(".resetPlay").addEventListener("click",()=>{
-		window.location.reload();
+		SAudio = createjs.Sound.play("Start");
+		SAudio.volume = 0.3;
+		document.querySelector(".over").style.display = "none";
+		Start = true;
+		Hp = 100;
+		Score = 0;
+		document.querySelector(".hp").style.width = `${Hp}%`;
+		document.querySelector(".Score").innerHTML = Score;
+		Stone.gotoAndPlay("stop");
+		createjs.Ticker.addEventListener("tick",tickfn)
+		isKeydown = false;
+		window.addEventListener("keydown",keydownMoveFn)
+		window.addEventListener("keyup",keyupMoveFn)
 	})
-
+	
 	function keydownMoveFn(e){
 		if(isKeydown) return;
 		if(e.keyCode===37 || e.keyCode===39){
@@ -152,6 +164,7 @@ function handleComplete(evt,comp) {
 			let hit = ndgmr.checkRectCollision(Food3,Stone);
 			if(Hp > 0){
 				if(hit){
+					isKeydown = false;
 					HAudio = createjs.Sound.play("Hit")
 					HAudio.volume = 0.3;
 					Stone.gotoAndPlay("hit");
@@ -167,7 +180,7 @@ function handleComplete(evt,comp) {
 	createjs.Ticker.addEventListener("tick",tickfn)
 	function tickfn(){
 		if(Hp <= 0){
-			clearInterval(timeFood);
+			Start = false;
 			OAudio = createjs.Sound.play("Over")
 			OAudio.volume = 0.3;
 			Stone.gotoAndPlay("die");
@@ -186,7 +199,6 @@ function handleComplete(evt,comp) {
 			Stone.x -= SPEED;
 		}
 	}
-
 
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);

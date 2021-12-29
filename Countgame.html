@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>誰能比我快</title>
+<link rel="stylesheet" href="css/countgame.css">
+<link rel="stylesheet" href="./scss/index.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+<script src="js/countgame.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script>
+    $(document).ready(function () {
+      $("#game").addClass("animate__animated animate__fadeIn");
+      $(".bg").addClass("animate__animated animate__fadeIn");
+      $("header").addClass("animate__animated animate__fadeIn");
+    });
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h4>誰能比我快</h4>
+    <p id="record">Best Record : <span>0</span></p>
+    <p id="timer">Time : <span>0</span></p>
+  </header>
+    <nav>
+      <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./EatBerry.html">EatBerry</a></li>
+        <li><a href="#">CountGame</a></li>
+        <li><a href="#">FlappyBird</a></li>
+    </ul>
+  </nav>
+  <div id="game">
+    <div id="numbers"></div>
+    <div id="startScene">
+      <p></p>
+      <button>START</button>
+    </div>
+  </div>
+  <div class="bg"></div>
+  <div class="bg2"></div>
+</div>
+</body>
+</html>

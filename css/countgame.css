@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  margin-bottom: 10px;
+  color: #f09d85;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 90px 0 50px;
+  text-align: center;
+  font-size: 2.7em;
+}
+
+#timer {
+  font-size: 1.3em;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+}
+
+#record {
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 0;
+}
+
+#game {
+  position: relative;
+}
+
+#numbers div {
+  width: 99px;
+  height: 64px;
+  padding-top: 35px;
+  font-size: 1.8em;
+  font-weight: bold;
+  background: #f09d85;
+  color: #f3eaea;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  float: left;
+  cursor: nw-resize;
+}
+
+#numbers div.hit {
+  background: #e27c1c;
+  color: #f3eaea;
+}
+
+#startScene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: #f09d85;
+}
+
+#startScene p {
+  margin: 205px 0 10px;
+  text-align: center;
+  color: #f3eaea;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Comfortaa", cursive;
+  border: none;
+  color: #f3eaea;
+  background: #e2681c;
+  border-radius: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: nw-resize;
+  color: #f3eaea;
+  background: #e27c1c;
+}
+
+button:hover {
+  color: #e27c1c;
+  background: #f3eaea;
+}
+
+button:focus {
+  outline: none;
+}
+
+.bg {
+  background: #f3eaea;
+  height: 600px;
+  width: 980px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -230px;
+  margin-left: -490px;
+  z-index: -1;
+}
