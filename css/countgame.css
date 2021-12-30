@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Comfortaa", cursive;
   -webkit-font-smoothing: antialiased;
@@ -7,6 +11,7 @@ body {
 
 #wrapper {
   width: 500px;
+  height: 600px;
   margin: 0 auto;
 }
 
@@ -15,10 +20,11 @@ header {
   margin-bottom: 10px;
   color: #f09d85;
   font-weight: bold;
+  z-index: 5;
 }
 
 h4 {
-  padding: 90px 0 50px;
+  padding: 40px 0 50px;
   text-align: center;
   font-size: 2.7em;
 }
@@ -101,14 +107,37 @@ button:focus {
   outline: none;
 }
 
-.bg {
-  background: #f3eaea;
-  height: 600px;
+nav {
+  background-color: rgb(31, 34, 39);
+  position: relative;
+  text-align: center;
+  top: -50px;
   width: 980px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: -230px;
-  margin-left: -490px;
+  margin-left: -240px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  display: flex;
+  margin: 0 auto;
+}
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: rgb(202, 177, 37);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: rgb(68, 61, 61);
+}
+
+.bg2 {
+  background: #f3eaea;
+  position: relative;
+  height: 570px;
+  width: 980px;
+  top: -50px;
+  margin-left: -240px;
   z-index: -1;
 }

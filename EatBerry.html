@@ -12,28 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script>
         $(document).ready(function () {
-          $(".Omanyte").addClass("animate__animated animate__fadeIn");
+          $(".Score").addClass("animate__animated animate__fadeIn");
+          $(".gamePlayBtn").addClass("animate__animated animate__fadeIn");
+          $(".over").addClass("animate__animated animate__fadeIn");
+          $(".hpBar").addClass("animate__animated animate__fadeIn");
+          $(".bg3").addClass("animate__animated animate__fadeIn");
+          $("#animation_container").addClass("animate__animated animate__fadeIn");
+          $("#canvas").addClass("animate__animated animate__fadeIn");
           $("h1").addClass("animate__animated animate__fadeIn");
         });
     </script>
 </head>
 <body>
     <header>
-        <h1>EatBerry</h1>
+        <h3>EatBerry</h3>
     </header>
-    <nav>
-        <ul>
-            <li><a href="./Home.html">Home</a></li>
-            <li><a href="#">EatBerry</a></li>
-            <li><a href="./Countgame.html">CountGame</a></li>
-            <li><a href="#">FlappyBird</a></li>
-        </ul>
-    </nav>
     <div class="Omanyte">
         <div id="app">
             <h1 class="Score">0</h1>
@@ -55,9 +54,16 @@
                 <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:700px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
                 </div>
             </div>
-        </div>
-        <div class="bg3"></div>
+            <div class="bg3"></div>
+            <nav>
+                <ul>
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="#">EatBerry</a></li>
+                    <li><a href="./Countgame.html">CountGame</a></li>
+                    <li><a href="#">FlappyBird</a></li>
+                </ul>
+            </nav>
+        </div>   
     </div>
-    <div class="bg"></div>
 </body>
 </html>

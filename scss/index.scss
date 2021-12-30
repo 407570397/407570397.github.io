@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
 }
-
 #app {
   width: 700px;
   height: 400px;
   position: relative;
+  margin: 0 auto;
+  top: 52px;
   > h1.Score {
     top: 15px;
     left: 30px;
@@ -73,35 +74,41 @@ a.gamePlayBtn {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.Omanyte {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -215px;
-  margin-left: -350px;
-}
-
 body {
   font-family: "Fuzzy Bubbles", cursive;
 }
-
-h1,
 h3 {
+  font-size: 2em;
+  padding: 50px 0 50px;
   text-align: center;
-  position: relative;
-  top: 100px;
   color: steelblue;
 }
+h1 {
+  padding: 0 0 50px;
+  text-align: center;
+  color: steelblue;
+}
+
+h2 {
+  top: 100px;
+  color: rgb(93, 116, 146);
+}
+
+h5 {
+  top: 100px;
+  color: rgb(141, 126, 102);
+  text-shadow: 0px 3px 3px #cccccc;
+  font-size: 1.5em;
+}
 nav {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
   background-color: rgb(31, 34, 39);
-  position: absolute;
+  position: relative;
+  text-align: center;
+  top: -489px;
   width: 980px;
-  top: 55%;
-  left: 50%;
-  margin-top: 220px;
-  margin-left: -490px;
-  z-index: 5;
+  left: -140px;
 }
 nav ul {
   display: flex;
@@ -119,74 +126,36 @@ nav ul li a {
 nav ul li a:hover {
   background-color: rgb(68, 61, 61);
 }
+
 .bg3 {
   background-image: url(../images/bg3.png);
   opacity: 0.7;
-  height: 600px;
+  position: relative;
+  height: 570px;
   width: 980px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: -248px;
-  margin-left: -490px;
+  top: -489px;
+  left: -140px;
   z-index: -1;
 }
-
-.bg {
-  background: #e4e4e4;
-  height: 600px;
-  width: 980px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: -210px;
-  margin-left: -490px;
-  z-index: -1;
-}
-
-.bg2 {
-  background: #f3eaea;
-  height: 600px;
-  width: 980px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: -210px;
-  margin-left: -490px;
-  z-index: -1;
-}
-
 table {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -170px;
+  margin-top: -152px;
   margin-left: -379px;
 }
 td {
   text-align: center;
-  border: 25px solid #e4e4e4;
+  border: 25px solid #ffffff;
   filter: opacity(50%);
 }
-h2 {
-  top: 100px;
-  color: rgb(93, 116, 146);
-}
-
-h5 {
-  top: 100px;
-  color: rgb(93, 116, 146);
-  text-shadow: 0px 3px 2px #cccccc;
-  font-size: 1.5em;
-}
-
 td img {
   border-radius: 20%;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
 
 td:hover {
-  -webkit-filter: opacity(30%); /* Safari */
+  -webkit-filter: opacity(30%);
   filter: opacity(100%);
   transform: scale(1.05);
 }
