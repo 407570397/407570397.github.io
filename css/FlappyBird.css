@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+canvas {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 210px;
+}
+h3 {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  padding: 50px 0 50px;
+  text-align: center;
+  color: steelblue;
+}
+nav {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(31, 34, 39);
+  text-align: center;
+  width: 980px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 519px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  display: flex;
+  margin: 0 auto;
+}
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: rgb(202, 177, 37);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: rgb(68, 61, 61);
+}
+.bg2 {
+  background: #eaf0f3;
+  height: 570px;
+  width: 980px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 103px;
+  z-index: -1;
+}
+button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 475px;
+}

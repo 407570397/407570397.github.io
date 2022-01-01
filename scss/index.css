@@ -94,6 +94,8 @@ body {
 }
 
 h3 {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
   font-size: 2em;
   padding: 50px 0 50px;
   text-align: center;
@@ -112,8 +114,10 @@ h2 {
 }
 
 h5 {
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
   top: 100px;
-  color: #8d7e66;
+  color: #aa9c98;
   text-shadow: 0px 3px 3px #cccccc;
   font-size: 1.5em;
 }
@@ -124,7 +128,7 @@ nav {
   background-color: #1f2227;
   position: relative;
   text-align: center;
-  top: -489px;
+  top: -484px;
   width: 980px;
   left: -140px;
 }
@@ -159,7 +163,7 @@ nav ul li a:hover {
   position: relative;
   height: 570px;
   width: 980px;
-  top: -489px;
+  top: -484px;
   left: -140px;
   z-index: -1;
 }
