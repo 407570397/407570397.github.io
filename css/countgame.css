@@ -24,9 +24,9 @@ header {
 }
 
 h4 {
+  font-size: 2em;
   padding: 51px 0 57px;
   text-align: center;
-  font-size: 2em;
 }
 
 #timer {
